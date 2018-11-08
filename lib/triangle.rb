@@ -10,11 +10,12 @@ class Triangle
 
   def kind
     if @arr.min <= 0 || @arr[2] > @arr[0] + @arr[1]
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      # begin
+      #   raise TriangleError
+      # rescue TriangleError => error
+      #   puts error.message
+      # end
+      raise TriangleError
     else
       if @a == @b && @b == @c
         :equilateral
