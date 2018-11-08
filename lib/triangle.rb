@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if @arr[2] > @arr[0] + @arr[1] || @arr.min <= 0
+    if @arr.min <= 0 || @arr[2] > @arr[0] + @arr[1]
       begin
         raise TriangleError
       rescue TriangleError => error
